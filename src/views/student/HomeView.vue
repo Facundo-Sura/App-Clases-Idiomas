@@ -14,7 +14,7 @@
     <div class="quick-stats">
       <div class="stat-card">
         <div class="stat-icon green">
-          <CheckCircle :size="20} />
+          <CheckCircle :size="24" />
         </div>
         <div class="stat-info">
           <span class="stat-value">{{ attendancePercent }}%</span>
