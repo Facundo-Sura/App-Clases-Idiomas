@@ -3,7 +3,7 @@
     <div class="sidebar-header">
       <div class="logo">
         <div class="logo-icon">L</div>
-        <span>LinguaClass</span>
+        <span>EduLingua</span>
       </div>
     </div>
 

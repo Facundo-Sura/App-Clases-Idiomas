@@ -3,7 +3,7 @@
     <div class="login-card">
       <div class="logo">
         <div class="logo-icon">L</div>
-        <h1>LinguaClass</h1>
+        <h1>EduLingua</h1>
       </div>
       <p class="subtitle">Plataforma Educativa de Idiomas</p>
 
@@ -49,15 +49,22 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
-import { useRouter } from 'vue-router'
+import { ref, computed, watch } from 'vue'
+import { useRouter, useRoute } from 'vue-router'
 import { useAuthStore } from '../stores/auth'
 
 const router = useRouter()
+const route = useRoute()
 const auth = useAuthStore()
 
 const selectedRole = ref('teacher')
 const selectedUser = ref(null)
+
+watch(() => route.query, (query) => {
+  if (query.role) {
+    selectedRole.value = query.role
+  }
+}, { immediate: true })
 
 const availableUsers = computed(() => {
   return selectedRole.value === 'teacher' ? auth.teachers : auth.students

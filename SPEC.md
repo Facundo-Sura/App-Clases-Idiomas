@@ -1,8 +1,8 @@
-# LinguaClass - Plataforma Educativa de Idiomas
+# EduLingua - Plataforma Educativa de Idiomas
 
 ## Concept & Vision
 
-LinguaClass es una plataforma minimalista y profesional para gestionar clases de idiomas. La experiencia transmite orden académico con toques modernos. Interfaz clara donde profesores y alumnos encuentran todo lo que necesitan sin distracciones.
+EduLingua es una plataforma minimalista y profesional para gestionar clases de idiomas. La experiencia transmite orden académico con toques modernos. Interfaz clara donde profesores y alumnos encuentran todo lo que necesitan sin distracciones.
 
 ## Design Language
 

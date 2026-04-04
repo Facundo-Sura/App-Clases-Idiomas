@@ -1,8 +1,8 @@
-# LinguaClass - Plataforma Educativa de Idiomas
+# EduLingua - Plataforma Educativa de Idiomas
 
 ## Descripción del Proyecto
 
-LinguaClass es una aplicación web educativa diseñada para la gestión y administración de clases de idiomas. Esta plataforma MVP permite a docentes y alumnos interactuar de manera eficiente en un entorno educativo digital.
+EduLingua es una aplicación web educativa diseñada para la gestión y administración de clases de idiomas. Esta plataforma MVP permite a docentes y alumnos interactuar de manera eficiente en un entorno educativo digital.
 
 La aplicación está dividida en dos interfaces principales:
 - **Vista Docente**: Para profesores que gestionan estudiantes, materiales y exámenes.

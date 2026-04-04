@@ -2,13 +2,13 @@ import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 
 export const useAuthStore = defineStore('auth', () => {
-  const user = ref(JSON.parse(localStorage.getItem('linguaclass_user')) || null)
+  const user = ref(JSON.parse(localStorage.getItem('edulingua_user')) || null)
 
   const isAuthenticated = computed(() => !!user.value)
 
   const teachers = [
-    { id: 1, name: 'María García', email: 'maria@linguaclass.com', role: 'teacher', avatar: 'https://i.pravatar.cc/150?img=1' },
-    { id: 2, name: 'Carlos López', email: 'carlos@linguaclass.com', role: 'teacher', avatar: 'https://i.pravatar.cc/150?img=2' }
+    { id: 1, name: 'María García', email: 'maria@edulingua.com', role: 'teacher', avatar: 'https://i.pravatar.cc/150?img=1' },
+    { id: 2, name: 'Carlos López', email: 'carlos@edulingua.com', role: 'teacher', avatar: 'https://i.pravatar.cc/150?img=2' }
   ]
 
   const students = [
@@ -24,12 +24,12 @@ export const useAuthStore = defineStore('auth', () => {
 
   function login(selectedUser) {
     user.value = selectedUser
-    localStorage.setItem('linguaclass_user', JSON.stringify(selectedUser))
+    localStorage.setItem('edulingua_user', JSON.stringify(selectedUser))
   }
 
   function logout() {
     user.value = null
-    localStorage.removeItem('linguaclass_user')
+    localStorage.removeItem('edulingua_user')
   }
 
   function getTeacherStudents(teacherId) {
